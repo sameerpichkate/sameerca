@@ -12,4 +12,4 @@ export const handleError = (msg) => {
     })
 }
 
-export const APIUrl = process.env.REACT_APP_API_URL || 'https://rajsinghtaskman.vercel.app';
+export const APIUrl = process.env.REACT_APP_API_URL || 'http://localhost:8080';
