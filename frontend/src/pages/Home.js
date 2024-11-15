@@ -38,7 +38,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `https://rajsinghtaskman.vercel.app/expenses/${id}`;
+            const url = `${APIUrl}/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -62,7 +62,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `https://rajsinghtaskman.vercel.app/expenses`;
+            const url = `${APIUrl}/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -86,7 +86,7 @@ function Home() {
 
     const addTransaction = async (data) => {
         try {
-            const url = `https://rajsinghtaskman.vercel.app/expenses`;
+            const url = `${APIUrl}/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
